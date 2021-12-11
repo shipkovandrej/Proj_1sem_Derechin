@@ -1,3 +1,6 @@
+# Вариант 12
+# Организовать словарь на 10 англо-русских слов, обеспечивающий
+# "перевод" английского слова на русский.
 def getkey(dic, target):
     for key, value in dic.items():
         if value == target:
@@ -14,6 +17,6 @@ dic = {"стол": "table",
 
 word = input("Слово: ")
 if dic.get(word):
-    print(dic.get(word))
+    print("Перевод слова:", dic.get(word))
 else:
-    print(getkey(dic, word))
+    print("Перевод слова:", getkey(dic, word))
